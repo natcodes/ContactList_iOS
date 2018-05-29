@@ -37,7 +37,7 @@ class AddEditViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+     
     }
 
     
@@ -56,8 +56,6 @@ class AddEditViewController: UIViewController {
 
         unumber = unumber.trimmingCharacters(in: .whitespaces)
         
-        
         delegate?.saveItem(fname: ufname, lname: ulname, number: unumber, at: indexPath)
     }
-
 }

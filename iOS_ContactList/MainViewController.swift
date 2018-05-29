@@ -8,8 +8,12 @@ import UIKit
 import CoreData
 
 class MainViewController: UIViewController, ContactDelegate, UISearchBarDelegate {
-  
+    
     var contacts:[Contacts] = []
+//    var num: String
+    
+//    var myPhoneNumber = String()
+    
     
     let appDelegate = (UIApplication.shared.delegate as! AppDelegate)
     var managedObjectContext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
@@ -72,8 +76,6 @@ class MainViewController: UIViewController, ContactDelegate, UISearchBarDelegate
             newcont.fname = fname
             newcont.lname = lname
             newcont.number = formattedNumber(number: number)
-//            contacts.append(newcont)
-            
         }
         appDelegate.saveContext()
         fetchAll()
@@ -82,15 +84,20 @@ class MainViewController: UIViewController, ContactDelegate, UISearchBarDelegate
     }
     
     func formattedNumber(number: String) -> String {
-        let cleanPhoneNumber = number.components(separatedBy: CharacterSet.decimalDigits.inverted).joined()
-        let mask = "+X (XXX) XXX-XXXX"
+        var cleanPhoneNumber = number.components(separatedBy: CharacterSet.decimalDigits.inverted).joined()
+        var mask = "+X (XXX) XXX-XXXX"
         
-        if number.count<10
+        if cleanPhoneNumber.count == 10 {
+            cleanPhoneNumber = "1" + cleanPhoneNumber
+        }
+        else if cleanPhoneNumber.count == 7 {
+            mask = "XXX-XXXX"
+        }
         
         var result = ""
         var index = cleanPhoneNumber.startIndex
         for ch in mask {
-            if index == cleanPhoneNumber.endIndex {
+            if index == cleanPhoneNumber.endIndex { //if start and end are the same, string is empty, therefore break
                 break
             }
             if ch == "X" {
@@ -106,6 +113,7 @@ class MainViewController: UIViewController, ContactDelegate, UISearchBarDelegate
     func cancelButtonPressed(by controller: AddEditViewController) {
         dismiss(animated: true, completion: nil)
     }
+        
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		E0E48881206ADC1400A37E5F /* ContactDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E48880206ADC1400A37E5F /* ContactDelegate.swift */; };
 		E0E48883206C48B500A37E5F /* ViewDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E48882206C48B500A37E5F /* ViewDetailsController.swift */; };
+		E0F1743D20BC93A400B0DC1C /* notes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F1743C20BC93A400B0DC1C /* notes.swift */; };
 		E0F6E014206AB8E2003065BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F6E013206AB8E2003065BD /* AppDelegate.swift */; };
 		E0F6E016206AB8E2003065BD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F6E015206AB8E2003065BD /* MainViewController.swift */; };
 		E0F6E019206AB8E2003065BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0F6E017206AB8E2003065BD /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 /* Begin PBXFileReference section */
 		E0E48880206ADC1400A37E5F /* ContactDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDelegate.swift; sourceTree = "<group>"; };
 		E0E48882206C48B500A37E5F /* ViewDetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDetailsController.swift; sourceTree = "<group>"; };
+		E0F1743C20BC93A400B0DC1C /* notes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = notes.swift; sourceTree = "<group>"; };
 		E0F6E010206AB8E2003065BD /* iOS_ContactList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS_ContactList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0F6E013206AB8E2003065BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0F6E015206AB8E2003065BD /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				E0F6E013206AB8E2003065BD /* AppDelegate.swift */,
 				E0F6E015206AB8E2003065BD /* MainViewController.swift */,
 				E0F6E044206AC19C003065BD /* AddEditViewController.swift */,
+				E0F1743C20BC93A400B0DC1C /* notes.swift */,
 				E0E48880206ADC1400A37E5F /* ContactDelegate.swift */,
 				E0F6E017206AB8E2003065BD /* Main.storyboard */,
 				E0E48882206C48B500A37E5F /* ViewDetailsController.swift */,
@@ -277,6 +280,7 @@
 				E0F6E01C206AB8E2003065BD /* iOS_ContactList.xcdatamodeld in Sources */,
 				E0E48881206ADC1400A37E5F /* ContactDelegate.swift in Sources */,
 				E0E48883206C48B500A37E5F /* ViewDetailsController.swift in Sources */,
+				E0F1743D20BC93A400B0DC1C /* notes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
